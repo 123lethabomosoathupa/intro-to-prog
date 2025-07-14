@@ -1,0 +1,35 @@
+/* Container styles for the bubble animation area */
+#o {
+    width: 400px;
+    /* Fixed width of the container */
+    height: 400px;
+    /* Fixed height of the container */
+    position: relative;
+    /* Allows absolutely positioned children (bubbles) */
+    margin-left: auto;
+    /* Centers the container horizontally */
+    margin-right: auto;
+    /* Centers the container horizontally */
+}
+
+/* Style for each bubble */
+.bubble {
+    border: 8px dotted #ff0000;
+    /* White border to define the bubble's outline */
+    display: block;
+    /* Makes sure the bubble behaves like a block element */
+    position: absolute;
+    /* Allows precise placement inside the container */
+    border-radius: 20px;
+    /* Rounded corners to form a circle */
+    -webkit-border-radius: 20px;
+    /* Rounded corners for WebKit browsers */
+    -moz-border-radius: 20px;
+    /* Rounded corners for Firefox (older versions) */
+}
+
+/* Background color for the entire page */
+body {
+    background-color: #48ff00;
+    /* Deep blue background to enhance bubble visibility */
+}

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Hangman!</title>
+</head>
+
+<body>
+    <h1>Hangman!</h1>
+    <script>
+        // ✅ Create an array of possible secret words
+        var words = [
+            "javascript",
+            "monkey",
+            "amazing",
+            "pancake",
+            "banana",
+            "pimp",
+            "blanket",
+            "coffee"
+        ];
+
+        // ✅ Choose a random word from the array
+        var word = words[Math.floor(Math.random() * words.length)];
+
+        // ✅ Set up the answer array with underscores for each letter
+        var answerArray = [];
+        for (var i = 0; i < word.length; i++) {
+            answerArray[i] = "_";
+        }
+
+        // ✅ Track how many letters are still to be guessed
+        var remainingLetters = word.length;
+
+        // ✅ Set the maximum allowed guesses
+        var maxGuesses = 10;
+
+        // ✅ Track how many guesses the player has left
+        var remainingGuesses = maxGuesses;
+
+        // ✅ Main game loop: runs while there are letters to guess AND guesses left
+        while (remainingLetters > 0 && remainingGuesses > 0) {
+            // ✅ Show the current progress and guesses left
+            alert(answerArray.join(" ") + "\nGuesses left: " + remainingGuesses);
+
+            // ✅ Ask the player to guess a letter
+            var guess = prompt("Guess a letter, or click Cancel to stop playing.");
+
+            // ✅ If the player clicks Cancel, exit the game
+            if (guess === null) {
+                break;
+            } else {
+                // ✅ Convert guess to lowercase so it matches the word
+                guess = guess.toLowerCase();
+
+                // ✅ Check that the player only entered one letter
+                if (guess.length !== 1) {
+                    alert("Please enter a single letter.");
+                } else {
+                    // ✅ Flag to track if the guess was correct
+                    var correctGuess = false;
+
+                    // ✅ Loop through each letter in the word
+                    for (var j = 0; j < word.length; j++) {
+                        // ✅ If the guessed letter matches and hasn’t been guessed before
+                        if (word[j] === guess && answerArray[j] === "_") {
+                            answerArray[j] = guess;   // ✅ Reveal the letter
+                            remainingLetters--;       // ✅ Decrease letters left
+                            correctGuess = true;      // ✅ Mark it as a correct guess
+                        }
+                    }
+
+                    // ✅ If the guess wasn’t correct, reduce the number of guesses left
+                    if (!correctGuess) {
+                        remainingGuesses--;
+                        alert("Wrong guess!");
+                    }
+                }
+            }
+        }
+
+        // ✅ Check if player won or lost, then show final message
+        if (remainingLetters === 0) {
+            alert(answerArray.join(" "));
+            alert("🎉 Good job! The answer was: " + word);
+        } else {
+            alert("😢 You're out of guesses. The word was: " + word);
+        }
+    </script>
+</body>
+
+</html>

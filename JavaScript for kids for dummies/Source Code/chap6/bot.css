@@ -1,0 +1,98 @@
+/* Set default font for the whole page */
+body {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* Style all paragraph texts with large font size */
+p {
+    font-size: 3.5em;
+}
+
+/* Style for both eyes */
+.eye {
+    background-color: rgb(145, 0, 0);      /* Blue colored eyes */
+    width: 30%;                  /* Eye width relative to the head */
+    height: 30%;                 /* Eye height relative to the head */
+    border-radius: 50%;          /* Makes the eyes perfectly round */
+}
+
+/* Style for both arms */
+.arm {
+    background-color: #cacaca;   /* Light gray arm color */
+    position: absolute;          /* Positioned absolutely inside robot container */
+    top: 35%;                   /* Arms vertically positioned 35% from top */
+    width: 5%;                  /* Arms width relative to robot container */
+    height: 40%;                /* Arms height relative to robot container */
+}
+
+/* Style for robot's head container */
+#head {
+    width: 30%;                 /* Head width relative to robot container */
+    height: 30%;                /* Head height relative to robot container */
+    border-radius: 15%;         /* Rounded corners for the head */
+    background-color: #2bff00;  /* Light gray background for head */
+    position: absolute;         /* Absolute positioning inside robot container */
+    left: 32%;                  /* Positioned 32% from left */
+    top: 5%;                    /* Positioned 5% from top */
+}
+
+/* Positioning for right eye inside the head */
+#righteye {
+    background-color: #ffffff;
+    position: absolute;         /* Positioned relative to head */
+    left: 20%;                  /* 20% from the left of the head */
+    top: 20%;                   /* 20% from the top of the head */
+}
+
+/* Positioning for left eye inside the head */
+#lefteye {
+    position: absolute;         /* Positioned relative to head */
+    left: 60%;                  /* 60% from the left of the head */
+    top: 20%;                   /* 20% from the top of the head */
+}
+
+/* Style and position for the nose */
+#nose {
+    position: absolute;         /* Positioned relative to head */
+    left: 45%;                  /* 45% from left inside the head */
+    top: 50%;                   /* 50% from top inside the head */
+    width: 10%;                 /* Nose width relative to head */
+    height: 10%;                /* Nose height relative to head */
+    background-color: black;    /* Black nose */
+}
+
+/* Style and position for the mouth */
+#mouth {
+    position: absolute;         /* Positioned relative to head */
+    width: 65%;                 /* Mouth width relative to head */
+    height: 15%;                /* Mouth height relative to head */
+    left: 20%;                  /* Positioned 20% from left inside head */
+    top: 70%;                   /* Positioned 70% from top inside head */
+    background-color: red;      /* Red colored mouth */
+}
+
+/* Style for the robot's body */
+#body {
+    position: absolute;         /* Positioned absolutely inside robot container */
+    left: 25%;                  /* 25% from left */
+    top: 35%;                   /* 35% from top */
+    width: 45%;                 /* Body width relative to robot container */
+    height: 55%;                /* Body height relative to robot container */
+    background-color: #00ffff;  /* Light gray background */
+    text-align: center;         /* Center the text inside the body */
+    padding-top: 30px;          /* Padding on top so text isn't stuck to top */
+}
+
+/* Position and style adjustments for right arm */
+#rightarm {
+    position: absolute;         /* Absolute positioning */
+    left: 20%;                 /* Positioned 20% from left */
+}
+
+/* Position and style adjustments for left arm */
+#leftarm {
+    position: absolute;         /* Absolute positioning */
+    left: 70%;                 /* Positioned 70% from left */
+    width: 30%;                /* Wider than right arm */
+    height: 7%;                /* Shorter height than right arm */
+}

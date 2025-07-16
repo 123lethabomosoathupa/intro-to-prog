@@ -1,0 +1,63 @@
+/* General body styling */
+body {
+    font-family: "Courier New", Courier, monospace; /* Monospaced font for a classic coding/calculator feel */
+    font-size: 0.85em; /* Slightly smaller base font size */
+}
+
+
+header {
+    text-align: center;
+}
+
+/* Styling for section headers (h2) */
+h2 {
+    text-align: center;                  /* Center-align the heading */
+    font-size: 1.2em;                    /* Slightly larger font size */
+    border-top: 2px dashed yellow;      /* Yellow dashed border on top */
+    border-bottom: 2px dashed yellow;   /* Yellow dashed border on bottom */
+}
+
+/* Styling for text input fields */
+input[type=text] {
+    width: 40px;                         /* Small width, likely for numbers */
+    height: 40px;                        /* Square shape */
+    margin-left: 20px;                   /* Space from the left */
+    background-color: #DADADA;           /* Light gray background */
+    font-size: 1.2em;                    /* Make input text larger */
+}
+
+/* Styling for submit button */
+input[type=submit] {
+    width: 200px;                        /* Wide button for easier interaction */
+    font-size: 2em;                      /* Large text to stand out */
+}
+
+/* Wrapper container for calculator */
+#calculator {
+    border: 1px solid #dadada;           /* Light border around the calculator */
+    border-radius: 5px;                  /* Slightly rounded corners */
+    padding: 4px;                        /* Inner spacing */
+}
+
+/* Area for user input fields */
+.input-area {
+    background-color: #6b42ff;           /* Bright green background */
+    padding: 8px;                        /* Inner spacing */
+    margin: 8px;                         /* Outer spacing */
+    text-align: center;                  /* Center-align content inside */
+    border-radius: 8px;                  /* Rounded corners */
+}
+
+/* Section for selecting operations like +, -, *, / */
+.operator-choices {
+    text-align: left;                    /* Align operator options to the left */
+}
+
+/* Output display section */
+.output-area {
+    background-color: #ff0000;           /* Dark gray background */
+    color: #000000;                      /* White text for contrast */
+    padding: 8px;                        /* Inner spacing */
+    margin: 8px;                         /* Outer spacing */
+    font-size: 1.5em;                    /* Larger font for output visibility */
+}

@@ -1,0 +1,41 @@
+/* Style for the main car container */
+#car {
+    font-family: Arial; /* Sets the font for any text inside the car div */
+}
+
+/* Style for the car body */
+#body {
+    position: absolute;      /* Positions the car body absolutely on the page */
+    top: 50px;               /* Moves the car body 50px from the top of the page */
+    width: 80%;              /* Sets the width of the car body to 80% of the page */
+    height: 100px;           /* Height of the car body */
+    background-color: #8c00ff; /* Default color of the car body (overridden by JS) */
+    border: black; /* Border around the car body */
+    border-style:solid;
+    border-top-color: #fbff00;
+    text-align: center;      /* Center-aligns any text inside the car body */
+}
+
+/* Style for the back wheel */
+#backwheel {
+    position: absolute;         /* Absolute positioning */
+    left: 10%;                  /* Moves the wheel to the left by 10% of the page width */
+    top: 130px;                 /* Moves it down to sit below the car body */
+    background-color: #fbff00; /* Wheel color */
+    border: 3px solid black;   /* Wheel border */
+    border-radius: 50%;        /* Makes the wheel round */
+    width: 60px;               /* Wheel width */
+    height: 60px;              /* Wheel height */
+}
+
+/* Style for the front wheel */
+#frontwheel {
+    position: absolute;             /* Absolute positioning */
+    left: 70%;                      /* Places it to the right of the back wheel */
+    top: 130px;                     /* Same vertical alignment as back wheel */
+    background-color: #ffee00;      /* Red-colored front wheel */
+    border: 3px solid rgb(7, 7, 7); /* Dark border */
+    border-radius: 50%;            /* Makes it round */
+    width: 50px;                   /* Wheel width */
+    height: 50px;                  /* Wheel height */
+}

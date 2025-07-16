@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Cars</title>
+    <!-- Link to external CSS file for styling -->
+    <link rel="stylesheet" href="car.css">
+</head>
+
+<body>
+    <!-- Main container for the car information -->
+    <div id="car">
+        <!-- Sentence with dynamic year and price values -->
+        This <span id="modelyear"></span> dream car can be yours for just: $<span id="pricetag"></span>
+        
+        <!-- Container for the car's body; background color and text will be updated with JavaScript -->
+        <div id="body"></div>
+
+        <!-- Decorative elements: wheels, can be styled in CSS -->
+        <div id="frontwheel"></div>
+        <div id="backwheel"></div>
+    </div>
+
+    <!-- Link to external JavaScript file -->
+    <script src="car.js"></script>
+</body>
+
+</html>
+
+<!-- 
+Notes:
+- A <span> is an inline HTML element used to apply styles or JavaScript to a specific portion of text.
+- It's useful when you want to style or modify just one word or part of a sentence without affecting layout.
+-->
